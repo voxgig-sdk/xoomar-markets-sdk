@@ -1,0 +1,37 @@
+# API Information
+
+
+main: {
+  kit: {
+    info: {
+      contact: {
+        email: "info@xoomar.com"
+        name: "XOOMAR"
+        url: "https://xoomar.com/developers"
+      }
+      description: "JSON and CSV over plain GET. Every response carries the same envelope: data, updatedAt, source, docs, license, attribution and meta, whose sourceAttribution line credits the publisher of the data. No key needed to start: 10 requests a minute per IP without a key and 30 a minute with a free account key, with at least six months of history. Data terms: https://xoomar.com/terms. Credit XOOMAR with a link to the dataset page when you republish the data."
+      license: {
+        name: "XOOMAR data terms"
+        url: "https://xoomar.com/terms"
+      }
+      security: {
+        in: "header"
+        name: "x-api-key"
+        prefix: ""
+        scheme: "apiKey"
+        type: "apiKey"
+      }
+      servers: [
+        {
+          url: "https://xoomar.com"
+        }
+      ]
+      summary: "Free market data from primary sources: SEC, FINRA, CFTC, the Federal Reserve, Treasury, BLS/BEA/Census and the exchanges."
+      termsOfService: "https://xoomar.com/terms"
+      title: "XOOMAR market data API"
+      version: "2026-09-15"
+      website: "https://xoomar.com"
+    }
+  }
+}
+

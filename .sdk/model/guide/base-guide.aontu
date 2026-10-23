@@ -1,0 +1,180 @@
+# Generated from the API definition and overwritten on every build: do not
+# edit this file. Put customizations in the guide entry file, which includes
+# this one and overrides its defaults:
+#   guide.aontu
+
+guide: {
+  metrics: count: entity: 3
+  metrics: count: path: 44
+  metrics: count: method: 44
+
+  entity: company: {
+    path: "/api/markets/bitcoin-treasuries": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.data`")|top
+    }
+    path: "/api/markets/buybacks": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.data`")|top
+    }
+    path: "/api/markets/earnings": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.data`")|top
+    }
+    path: "/api/markets/earnings/{ticker}": {
+      op: load: method: *GET
+    }
+    path: "/api/markets/events": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.data`")|top
+    }
+    path: "/api/markets/fails-to-deliver": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.data`")|top
+    }
+    path: "/api/markets/federal-contracts": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.data`")|top
+    }
+    path: "/api/markets/financials": {
+      op: load: method: *GET
+    }
+    path: "/api/markets/funds": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.data`")|top
+    }
+    path: "/api/markets/funds/{slug}": {
+      op: load: method: *GET
+    }
+    path: "/api/markets/insiders": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.data`")|top
+    }
+    path: "/api/markets/insiders/clusters": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.data`")|top
+    }
+    path: "/api/markets/insiders/{ticker}": {
+      op: load: method: *GET
+    }
+    path: "/api/markets/ipos": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.data`")|top
+    }
+    path: "/api/markets/large-holders": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.data`")|top
+    }
+    path: "/api/markets/planned-sales": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.data`")|top
+    }
+    path: "/api/markets/short-interest": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.data`")|top
+    }
+    path: "/api/markets/short-volume": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.data`")|top
+    }
+    path: "/api/markets/startup-funding": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.data`")|top
+    }
+    path: "/api/markets/structured-products": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.data`")|top
+    }
+    path: "/api/markets/threshold-list": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.data`")|top
+    }
+  }
+
+  entity: crypto: {
+    path: "/api/markets/etf-flows": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.data`")|top
+    }
+    path: "/api/markets/funding-rates": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.data`")|top
+    }
+    path: "/api/markets/funding-rates/{slug}": {
+      op: load: method: *GET
+    }
+    path: "/api/markets/liquidations": {
+      op: load: method: *GET
+    }
+    path: "/api/markets/liquidations/history": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.data`")|top
+    }
+    path: "/api/markets/liquidations/recent": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.data`")|top
+    }
+    path: "/api/markets/open-interest/{slug}": {
+      op: load: method: *GET
+    }
+    path: "/api/markets/options/{currency}": {
+      op: load: method: *GET
+    }
+    path: "/api/markets/options/{currency}/dvol": {
+      op: load: method: *GET
+    }
+    path: "/api/markets/sentiment": {
+      op: load: method: *GET
+    }
+    path: "/api/markets/sentiment/{slug}": {
+      op: load: method: *GET
+    }
+    path: "/api/markets/signals/{slug}": {
+      op: load: method: *GET
+    }
+    path: "/api/markets/symbols": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.data`")|top
+    }
+    path: "/api/markets/whales": {
+      op: load: method: *GET
+    }
+    path: "/api/markets/whales/{coin}": {
+      op: load: method: *GET
+    }
+  }
+
+  entity: macro: {
+    path: "/api/markets/calendar": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.data`")|top
+    }
+    path: "/api/markets/cot": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.data`")|top
+    }
+    path: "/api/markets/cot/{slug}": {
+      op: load: method: *GET
+    }
+    path: "/api/markets/fed-liquidity": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.data`")|top
+    }
+    path: "/api/markets/macro": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.data`")|top
+    }
+    path: "/api/markets/rates": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.data`")|top
+    }
+    path: "/api/markets/rates/{country}": {
+      op: load: method: *GET
+    }
+    path: "/api/markets/treasury-auctions": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.data`")|top
+    }
+  }
+
+}

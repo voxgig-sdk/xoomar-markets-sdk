@@ -1,0 +1,1125 @@
+# Entity: macro
+
+main: kit: entity: macro: {
+
+  alias: field: {}
+
+  fields: {
+    actual: {
+      h: "Actual"
+      n: "actual"
+      r: false
+      sh: "Filled after release from the agency series (CPI year over year %, payrolls monthly change in thousands, retail sales % m/m, claims in thousands, ...)"
+      t: [
+        "`$ONE`"
+        [
+          "`$STRING`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    assetMgrLong: {
+      h: "Asset Mgr Long"
+      n: "assetMgrLong"
+      r: false
+      sh: "Asset managers and institutional investors (tff); swap dealers (disagg)"
+      t: [
+        "`$ONE`"
+        [
+          "`$NUMBER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    assetMgrShort: {
+      h: "Asset Mgr Short"
+      n: "assetMgrShort"
+      r: false
+      sh: "Asset managers and institutional investors (tff); swap dealers (disagg)"
+      t: [
+        "`$ONE`"
+        [
+          "`$NUMBER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    assets: {
+      h: "Assets"
+      n: "assets"
+      r: false
+      sh: "Fed total assets, USD (WALCL)"
+      t: "`$NUMBER`"
+    }
+    attribution: {
+      h: "Attribution"
+      n: "attribution"
+      r: false
+      t: "`$STRING`"
+    }
+    auctionDate: {
+      fo: "date"
+      h: "Auction Date"
+      n: "auctionDate"
+      r: false
+      sh: "Auction date"
+      t: "`$STRING`"
+    }
+    bidToCover: {
+      h: "Bid To Cover"
+      n: "bidToCover"
+      r: false
+      sh: "Tendered divided by accepted"
+      t: [
+        "`$ONE`"
+        [
+          "`$NUMBER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    canonicalUrl: {
+      fo: "uri"
+      h: "Canonical Url"
+      n: "canonicalUrl"
+      r: false
+      sh: "The matching page on xoomar.com"
+      t: "`$STRING`"
+    }
+    country: {
+      h: "Country"
+      n: "country"
+      r: false
+      sh: "Economy"
+      t: "`$STRING`"
+    }
+    countryCode: {
+      h: "Country Code"
+      n: "countryCode"
+      r: false
+      sh: "BIS area code"
+      t: "`$STRING`"
+    }
+    cusip: {
+      h: "Cusip"
+      n: "cusip"
+      r: false
+      sh: "Security CUSIP; a reopening shares the original's CUSIP"
+      t: "`$STRING`"
+    }
+    data: {
+      h: "Data"
+      n: "data"
+      r: false
+      t: "`$ARRAY`"
+    }
+    date: {
+      fo: "date"
+      h: "Date"
+      n: "date"
+      r: false
+      sh: "H.4.1 Wednesday date"
+      t: "`$STRING`"
+    }
+    dealerAccepted: {
+      h: "Dealer Accepted"
+      n: "dealerAccepted"
+      r: false
+      sh: "Accepted by primary dealers, USD"
+      t: [
+        "`$ONE`"
+        [
+          "`$NUMBER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    dealerLong: {
+      h: "Dealer Long"
+      n: "dealerLong"
+      r: false
+      sh: "Dealers and intermediaries (tff); producers, merchants, processors and users (disagg)"
+      t: [
+        "`$ONE`"
+        [
+          "`$NUMBER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    dealerShare: {
+      h: "Dealer Share"
+      n: "dealerShare"
+      r: false
+      sh: "Dealer share of accepted, 0 to 1"
+      t: [
+        "`$ONE`"
+        [
+          "`$NUMBER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    dealerShort: {
+      h: "Dealer Short"
+      n: "dealerShort"
+      r: false
+      sh: "Dealers and intermediaries (tff); producers, merchants, processors and users (disagg)"
+      t: [
+        "`$ONE`"
+        [
+          "`$NUMBER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    directAccepted: {
+      h: "Direct Accepted"
+      n: "directAccepted"
+      r: false
+      sh: "Accepted from direct bidders, USD"
+      t: [
+        "`$ONE`"
+        [
+          "`$NUMBER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    directShare: {
+      h: "Direct Share"
+      n: "directShare"
+      r: false
+      sh: "Direct share of accepted, 0 to 1"
+      t: [
+        "`$ONE`"
+        [
+          "`$NUMBER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    docs: {
+      h: "Docs"
+      n: "docs"
+      r: false
+      t: "`$STRING`"
+    }
+    eventName: {
+      h: "Event Name"
+      n: "eventName"
+      r: false
+      sh: "CPI (Consumer Price Index), Nonfarm Payrolls (Employment Situation), Initial Jobless Claims, Retail Sales (Advance), FOMC Rate Decision, ..."
+      t: "`$STRING`"
+    }
+    forecast: {
+      h: "Forecast"
+      n: "forecast"
+      r: false
+      sh: "Always null: consensus forecasts aren't included"
+      t: [
+        "`$ONE`"
+        [
+          "`$STRING`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    group: {
+      h: "Group"
+      n: "group"
+      r: false
+      sh: "currencies, indices, crypto, metals, energy, bonds, agriculture, other"
+      t: "`$STRING`"
+    }
+    highRate: {
+      h: "High Rate"
+      n: "highRate"
+      r: false
+      sh: "High discount rate (bills) or high discount margin (FRNs), percent"
+      t: [
+        "`$ONE`"
+        [
+          "`$NUMBER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    highYield: {
+      h: "High Yield"
+      n: "highYield"
+      r: false
+      sh: "Stop-out yield, percent (notes, bonds, TIPS)"
+      t: [
+        "`$ONE`"
+        [
+          "`$NUMBER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    importance: {
+      h: "Importance"
+      n: "importance"
+      r: false
+      sh: "high, med, or low"
+      t: "`$STRING`"
+    }
+    indirectAccepted: {
+      h: "Indirect Accepted"
+      n: "indirectAccepted"
+      r: false
+      sh: "Accepted from indirect bidders, USD"
+      t: [
+        "`$ONE`"
+        [
+          "`$NUMBER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    indirectShare: {
+      h: "Indirect Share"
+      n: "indirectShare"
+      r: false
+      sh: "Indirect share of accepted, 0 to 1"
+      t: [
+        "`$ONE`"
+        [
+          "`$NUMBER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    interestRate: {
+      h: "Interest Rate"
+      n: "interestRate"
+      r: false
+      sh: "Coupon set at auction, percent"
+      t: [
+        "`$ONE`"
+        [
+          "`$NUMBER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    issueDate: {
+      fo: "date"
+      h: "Issue Date"
+      n: "issueDate"
+      r: false
+      sh: "Settlement date"
+      t: [
+        "`$ONE`"
+        [
+          "`$STRING`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    lastChanged: {
+      h: "Last Changed"
+      n: "lastChanged"
+      r: false
+      sh: "Date of the most recent move"
+      t: [
+        "`$ONE`"
+        [
+          "`$STRING`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    levFundLong: {
+      h: "Lev Fund Long"
+      n: "levFundLong"
+      r: false
+      sh: "Leveraged funds (tff); managed money (disagg)"
+      t: [
+        "`$ONE`"
+        [
+          "`$NUMBER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    levFundShort: {
+      h: "Lev Fund Short"
+      n: "levFundShort"
+      r: false
+      sh: "Leveraged funds (tff); managed money (disagg)"
+      t: [
+        "`$ONE`"
+        [
+          "`$NUMBER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    license: {
+      h: "License"
+      n: "license"
+      r: false
+      sh: "Data terms"
+      t: "`$STRING`"
+    }
+    m1_m6: {
+      h: "M1 M6"
+      n: "m1_m6"
+      r: false
+      sh: "1, 2, 3, 6 month Treasury yields in percent"
+      t: [
+        "`$ONE`"
+        [
+          "`$STRING`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    maturityDate: {
+      fo: "date"
+      h: "Maturity Date"
+      n: "maturityDate"
+      r: false
+      sh: "Maturity"
+      t: [
+        "`$ONE`"
+        [
+          "`$STRING`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    meta: {
+      h: "Meta"
+      n: "meta"
+      r: false
+      sh: "Who publishes the data and how to credit it"
+      t: "`$OBJECT`"
+    }
+    name: {
+      h: "Name"
+      n: "name"
+      r: false
+      sh: "CFTC contract market name"
+      t: "`$STRING`"
+    }
+    net: {
+      h: "Net"
+      n: "net"
+      r: false
+      sh: "assets minus tga minus rrp, USD"
+      t: "`$NUMBER`"
+    }
+    nonreptLong: {
+      h: "Nonrept Long"
+      n: "nonreptLong"
+      r: false
+      sh: "Non-reportable (small trader) positions"
+      t: [
+        "`$ONE`"
+        [
+          "`$NUMBER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    nonreptShort: {
+      h: "Nonrept Short"
+      n: "nonreptShort"
+      r: false
+      sh: "Non-reportable (small trader) positions"
+      t: [
+        "`$ONE`"
+        [
+          "`$NUMBER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    offeringAmount: {
+      h: "Offering Amount"
+      n: "offeringAmount"
+      r: false
+      sh: "Announced size, USD"
+      t: [
+        "`$ONE`"
+        [
+          "`$NUMBER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    openInterest: {
+      h: "Open Interest"
+      n: "openInterest"
+      r: false
+      sh: "Total open interest in contracts"
+      t: [
+        "`$ONE`"
+        [
+          "`$NUMBER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    otherLong: {
+      h: "Other Long"
+      n: "otherLong"
+      r: false
+      sh: "Other reportable positions"
+      t: [
+        "`$ONE`"
+        [
+          "`$NUMBER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    otherShort: {
+      h: "Other Short"
+      n: "otherShort"
+      r: false
+      sh: "Other reportable positions"
+      t: [
+        "`$ONE`"
+        [
+          "`$NUMBER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    periodLabel: {
+      h: "Period Label"
+      n: "periodLabel"
+      r: false
+      sh: "Reference period: 'August 2026', '3rd Quarter 2026', 'Week ending 2026-09-05'"
+      t: [
+        "`$ONE`"
+        [
+          "`$STRING`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    previous: {
+      h: "Previous"
+      n: "previous"
+      r: false
+      sh: "Prior period on the same basis as actual"
+      t: [
+        "`$ONE`"
+        [
+          "`$STRING`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    rate: {
+      h: "Rate"
+      n: "rate"
+      r: false
+      sh: "Policy rate, percent"
+      t: "`$STRING`"
+    }
+    reopening: {
+      h: "Reopening"
+      n: "reopening"
+      r: false
+      sh: "True when the auction adds to an existing issue"
+      t: [
+        "`$ONE`"
+        [
+          "`$BOOLEAN`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    reportDate: {
+      fo: "date"
+      h: "Report Date"
+      n: "reportDate"
+      r: false
+      sh: "CFTC report Tuesday, YYYY-MM-DD"
+      t: "`$STRING`"
+    }
+    reportType: {
+      h: "Report Type"
+      n: "reportType"
+      r: false
+      sh: "tff (financial futures) or disagg (commodities)"
+      t: "`$STRING`"
+    }
+    reserves: {
+      h: "Reserves"
+      n: "reserves"
+      r: false
+      sh: "Reserve balances with Federal Reserve Banks, USD (WRESBAL)"
+      t: [
+        "`$ONE`"
+        [
+          "`$NUMBER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    rrp: {
+      h: "Rrp"
+      n: "rrp"
+      r: false
+      sh: "Overnight reverse repo usage on that date, USD (RRPONTSYD)"
+      t: "`$NUMBER`"
+    }
+    scheduledAt: {
+      fo: "date-time"
+      h: "Scheduled At"
+      n: "scheduledAt"
+      r: false
+      sh: "Release time, UTC"
+      t: "`$STRING`"
+    }
+    securityTerm: {
+      h: "Security Term"
+      n: "securityTerm"
+      r: false
+      sh: "Term as announced: 4-Week, 2-Year, 10-Year, 9-Year 10-Month (reopening)"
+      t: "`$STRING`"
+    }
+    securityType: {
+      h: "Security Type"
+      n: "securityType"
+      r: false
+      sh: "Bill, CMB (cash management bill), Note, Bond, TIPS or FRN"
+      t: "`$STRING`"
+    }
+    slug: {
+      h: "Slug"
+      n: "slug"
+      r: false
+      sh: "Market slug for URLs (euro-fx, gold...)"
+      t: "`$STRING`"
+    }
+    sortRank: {
+      h: "Sort Rank"
+      n: "sortRank"
+      r: false
+      sh: "Display order within the group"
+      t: "`$NUMBER`"
+    }
+    source: {
+      h: "Source"
+      n: "source"
+      r: false
+      sh: "bls, bea, census, fed, dol or treasury (coupon auctions)"
+      t: "`$STRING`"
+    }
+    tga: {
+      h: "Tga"
+      n: "tga"
+      r: false
+      sh: "Treasury General Account, USD (WTREGEN)"
+      t: "`$NUMBER`"
+    }
+    totalAccepted: {
+      h: "Total Accepted"
+      n: "totalAccepted"
+      r: false
+      sh: "Accepted, USD (null until results)"
+      t: [
+        "`$ONE`"
+        [
+          "`$NUMBER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    totalTendered: {
+      h: "Total Tendered"
+      n: "totalTendered"
+      r: false
+      sh: "Bids received, USD"
+      t: [
+        "`$ONE`"
+        [
+          "`$NUMBER`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    unit: {
+      h: "Unit"
+      n: "unit"
+      r: false
+      sh: "What actual and previous are in: '% m/m', '% y/y, PCE price index', 'thousands, annual rate', 'USD billions, balance'"
+      t: [
+        "`$ONE`"
+        [
+          "`$STRING`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    updatedAt: {
+      fo: "date-time"
+      h: "Updated At"
+      n: "updatedAt"
+      r: false
+      sh: "When the response was built; a few dated feeds give the date of their newest row instead"
+      t: "`$STRING`"
+    }
+    y1_y30: {
+      h: "Y1 Y30"
+      n: "y1_y30"
+      r: false
+      sh: "1 to 30 year Treasury yields in percent"
+      t: [
+        "`$ONE`"
+        [
+          "`$STRING`"
+          "`$NULL`"
+        ]
+      ]
+    }
+  }
+
+  name: "macro"
+  op: {
+    list: {
+      name: "list"
+      points: [
+        {
+          co: {
+            id: "GET /api/markets/calendar"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            query: [
+              {
+                ex: "2026-01-01"
+                k: "query"
+                n: "from"
+                or: "from"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                k: "query"
+                n: "importance"
+                or: "importance"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                ex: "2026-01-01"
+                k: "query"
+                n: "to"
+                or: "to"
+                r: false
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/api/markets/calendar"
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "markets"
+            }
+            {
+              lit: "calendar"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body.data`"
+          }
+        }
+        {
+          co: {
+            id: "GET /api/markets/cot"
+            source: "openapi3"
+            version: 2
+          }
+          m: "GET"
+          o: "/api/markets/cot"
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "markets"
+            }
+            {
+              lit: "cot"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body.data`"
+          }
+        }
+        {
+          co: {
+            id: "GET /api/markets/fed-liquidity"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            query: [
+              {
+                ex: 5000
+                k: "query"
+                n: "limit"
+                or: "limit"
+                r: false
+                t: "`$INTEGER`"
+              }
+              {
+                k: "query"
+                n: "series"
+                or: "series"
+                r: false
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/api/markets/fed-liquidity"
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "markets"
+            }
+            {
+              lit: "fed-liquidity"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body.data`"
+          }
+        }
+        {
+          co: {
+            id: "GET /api/markets/macro"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            query: [
+              {
+                ex: "2026-01-01"
+                k: "query"
+                n: "from"
+                or: "from"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                k: "query"
+                n: "series"
+                or: "series"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                ex: "2026-01-01"
+                k: "query"
+                n: "to"
+                or: "to"
+                r: false
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/api/markets/macro"
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "markets"
+            }
+            {
+              lit: "macro"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body.data`"
+          }
+        }
+        {
+          co: {
+            id: "GET /api/markets/rates"
+            source: "openapi3"
+            version: 2
+          }
+          m: "GET"
+          o: "/api/markets/rates"
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "markets"
+            }
+            {
+              lit: "rates"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body.data`"
+          }
+        }
+        {
+          co: {
+            id: "GET /api/markets/treasury-auctions"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            query: [
+              {
+                ex: "2026-01-01"
+                k: "query"
+                n: "from"
+                or: "from"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                ex: 100
+                k: "query"
+                n: "limit"
+                or: "limit"
+                r: false
+                t: "`$INTEGER`"
+              }
+              {
+                ex: "10-Year"
+                k: "query"
+                n: "term"
+                or: "term"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                ex: "2026-01-01"
+                k: "query"
+                n: "to"
+                or: "to"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                k: "query"
+                n: "type"
+                or: "type"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                k: "query"
+                n: "upcoming"
+                or: "upcoming"
+                r: false
+                t: "`$BOOLEAN`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/api/markets/treasury-auctions"
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "markets"
+            }
+            {
+              lit: "treasury-auctions"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body.data`"
+          }
+        }
+      ]
+    }
+    load: {
+      name: "load"
+      points: [
+        {
+          co: {
+            id: "GET /api/markets/rates/{country}"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            params: [
+              {
+                ex: "us"
+                k: "param"
+                n: "country"
+                or: "country"
+                r: true
+                t: "`$STRING`"
+              }
+            ]
+            query: [
+              {
+                ex: "2026-01-01"
+                k: "query"
+                n: "from"
+                or: "from"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                ex: "2026-01-01"
+                k: "query"
+                n: "to"
+                or: "to"
+                r: false
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/api/markets/rates/{country}"
+          q: {
+            exist: [
+              "country"
+            ]
+          }
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "markets"
+            }
+            {
+              lit: "rates"
+            }
+            {
+              var: "country"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+        {
+          co: {
+            id: "GET /api/markets/cot/{slug}"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            params: [
+              {
+                ex: "e-mini-s-p-500-stock-index"
+                k: "param"
+                n: "slug"
+                or: "slug"
+                r: true
+                t: "`$STRING`"
+              }
+            ]
+            query: [
+              {
+                ex: "2026-01-01"
+                k: "query"
+                n: "from"
+                or: "from"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                ex: "2026-01-01"
+                k: "query"
+                n: "to"
+                or: "to"
+                r: false
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/api/markets/cot/{slug}"
+          q: {
+            exist: [
+              "slug"
+            ]
+          }
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "markets"
+            }
+            {
+              lit: "cot"
+            }
+            {
+              var: "slug"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

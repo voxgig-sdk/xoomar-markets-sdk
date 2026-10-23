@@ -1,0 +1,114 @@
+{
+  point: "warning"
+  note: "Points GET /api/markets/bitcoin-treasuries, GET /api/markets/buybacks, GET /api/markets/earnings, GET /api/markets/events, GET /api/markets/fails-to-deliver, GET /api/markets/federal-contracts, GET /api/markets/funds, GET /api/markets/insiders, GET /api/markets/insiders/clusters, GET /api/markets/ipos, GET /api/markets/large-holders, GET /api/markets/planned-sales, GET /api/markets/short-interest, GET /api/markets/short-volume, GET /api/markets/startup-funding, GET /api/markets/structured-products and GET /api/markets/threshold-list on entity=company op=list have the same selector (exist: none), so only GET /api/markets/bitcoin-treasuries is ever chosen. An action or another entity in guide.aontu tells them apart."
+  entity: "company"
+  op: "list"
+  points: [
+    "GET /api/markets/bitcoin-treasuries"
+    "GET /api/markets/buybacks"
+    "GET /api/markets/earnings"
+    "GET /api/markets/events"
+    "GET /api/markets/fails-to-deliver"
+    "GET /api/markets/federal-contracts"
+    "GET /api/markets/funds"
+    "GET /api/markets/insiders"
+    "GET /api/markets/insiders/clusters"
+    "GET /api/markets/ipos"
+    "GET /api/markets/large-holders"
+    "GET /api/markets/planned-sales"
+    "GET /api/markets/short-interest"
+    "GET /api/markets/short-volume"
+    "GET /api/markets/startup-funding"
+    "GET /api/markets/structured-products"
+    "GET /api/markets/threshold-list"
+  ]
+
+}
+
+
+{
+  point: "warning"
+  note: "Points GET /api/markets/earnings/{ticker} and GET /api/markets/insiders/{ticker} on entity=company op=load have the same selector (exist: ticker), so only GET /api/markets/earnings/{ticker} is ever chosen. An action or another entity in guide.aontu tells them apart."
+  entity: "company"
+  op: "load"
+  points: [
+    "GET /api/markets/earnings/{ticker}"
+    "GET /api/markets/insiders/{ticker}"
+  ]
+
+}
+
+
+{
+  point: "warning"
+  note: "Points GET /api/markets/etf-flows, GET /api/markets/funding-rates, GET /api/markets/liquidations/history, GET /api/markets/liquidations/recent and GET /api/markets/symbols on entity=crypto op=list have the same selector (exist: none), so only GET /api/markets/etf-flows is ever chosen. An action or another entity in guide.aontu tells them apart."
+  entity: "crypto"
+  op: "list"
+  points: [
+    "GET /api/markets/etf-flows"
+    "GET /api/markets/funding-rates"
+    "GET /api/markets/liquidations/history"
+    "GET /api/markets/liquidations/recent"
+    "GET /api/markets/symbols"
+  ]
+
+}
+
+
+{
+  point: "warning"
+  note: "Points GET /api/markets/options/{currency} and GET /api/markets/options/{currency}/dvol on entity=crypto op=load have the same selector (exist: currency), so only GET /api/markets/options/{currency} is ever chosen. An action or another entity in guide.aontu tells them apart."
+  entity: "crypto"
+  op: "load"
+  points: [
+    "GET /api/markets/options/{currency}"
+    "GET /api/markets/options/{currency}/dvol"
+  ]
+
+}
+
+
+{
+  point: "warning"
+  note: "Points GET /api/markets/funding-rates/{slug}, GET /api/markets/open-interest/{slug}, GET /api/markets/sentiment/{slug} and GET /api/markets/signals/{slug} on entity=crypto op=load have the same selector (exist: slug), so only GET /api/markets/funding-rates/{slug} is ever chosen. An action or another entity in guide.aontu tells them apart."
+  entity: "crypto"
+  op: "load"
+  points: [
+    "GET /api/markets/funding-rates/{slug}"
+    "GET /api/markets/open-interest/{slug}"
+    "GET /api/markets/sentiment/{slug}"
+    "GET /api/markets/signals/{slug}"
+  ]
+
+}
+
+
+{
+  point: "warning"
+  note: "Points GET /api/markets/liquidations, GET /api/markets/sentiment and GET /api/markets/whales on entity=crypto op=load have the same selector (exist: none), so only GET /api/markets/liquidations is ever chosen. An action or another entity in guide.aontu tells them apart."
+  entity: "crypto"
+  op: "load"
+  points: [
+    "GET /api/markets/liquidations"
+    "GET /api/markets/sentiment"
+    "GET /api/markets/whales"
+  ]
+
+}
+
+
+{
+  point: "warning"
+  note: "Points GET /api/markets/calendar, GET /api/markets/cot, GET /api/markets/fed-liquidity, GET /api/markets/macro, GET /api/markets/rates and GET /api/markets/treasury-auctions on entity=macro op=list have the same selector (exist: none), so only GET /api/markets/calendar is ever chosen. An action or another entity in guide.aontu tells them apart."
+  entity: "macro"
+  op: "list"
+  points: [
+    "GET /api/markets/calendar"
+    "GET /api/markets/cot"
+    "GET /api/markets/fed-liquidity"
+    "GET /api/markets/macro"
+    "GET /api/markets/rates"
+    "GET /api/markets/treasury-auctions"
+  ]
+
+}

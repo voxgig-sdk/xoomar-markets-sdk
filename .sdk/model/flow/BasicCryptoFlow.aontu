@@ -1,0 +1,40 @@
+# BasicCryptoFlow
+
+main: kit: flow: BasicCryptoFlow:
+{
+  entity: "crypto",
+  kind: "basic",
+  name: "BasicCryptoFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "crypto_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "crypto_ref01",
+        srcdatavar: "crypto_ref01_data",
+        suffix: "_dt0"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-crypto_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicCryptoFlow"
+}

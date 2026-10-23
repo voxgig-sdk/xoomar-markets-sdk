@@ -1,0 +1,44 @@
+# BasicMacroFlow
+
+main: kit: flow: BasicMacroFlow:
+{
+  entity: "macro",
+  kind: "basic",
+  name: "BasicMacroFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "macro_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "macro_ref01",
+        srcdatavar: "macro_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "macro01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-macro_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicMacroFlow"
+}

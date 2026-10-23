@@ -1,0 +1,28 @@
+{
+  "files": [
+    "SUMMARY.md"
+  ],
+  "config": ".sdk/doc/qa/vale.ini",
+  "routes": {},
+  "quoted": {
+    "SUMMARY.md": [
+      "Aggregate market value of the shares to be sold, USD",
+      "Always null, kept so existing clients parse unchanged",
+      "Amendment number; null for the original filing",
+      "Asset managers and institutional investors (tff); swap dealers (disagg)",
+      "Auction date",
+      "Base asset ticker (BTC, ETH...)",
+      "Binance symbol",
+      "Date the action was signed",
+      "FPDS action type code",
+      "Fed total assets, USD (WALCL)",
+      "Filled after release from the agency series (CPI year over year %, payrolls monthly change in thousands, retail sales % m/m, claims in thousands, ...)",
+      "Free account key from /account",
+      "Holdings valued in USD",
+      "JSON and CSV over plain GET. Every response carries the same envelope: data, updatedAt, source, docs, license, attribution and meta, whose sourceAttribution line credits the publisher of the data. No key needed to start: 10 requests a minute per IP without a key and 30 a minute with a free account key, with at least six months of history. Data terms: https://xoomar.com/terms. Credit XOOMAR with a link to the dataset page when you republish the data.",
+      "OK",
+      "The filing&#39;s accession number for reported rows; null for estimates",
+      "btc or eth"
+    ]
+  }
+}

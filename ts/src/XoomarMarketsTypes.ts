@@ -1,0 +1,395 @@
+// Typed models for the XoomarMarkets SDK.
+//
+// GENERATED from the API model: main.kit.entity.<e>.fields{} and per-op
+// params (op.<name>.points[].g.params[]). Field/param types come from the
+// canonical type sentinels via @voxgig/sdkgen canonToType (source of truth:
+// @voxgig/apidef VALID_CANON). Do not edit by hand.
+
+export interface Company {
+  accessionNo?: string | null
+  actionDate?: string
+  actionType?: string | null
+  aggregateMarketValue?: number | null
+  amendmentNo?: number | null
+  amountUsd?: number
+  approxSaleDate?: string | null
+  asOf?: string | null
+  attribution?: string
+  avgDailyVol?: number | null
+  awardId?: string
+  awardType?: string | null
+  awardingAgency?: string | null
+  awardingSubAgency?: string | null
+  barrierPct?: string | null
+  basis?: string | null
+  broker?: string | null
+  buybacks?: number
+  buyers?: any[]
+  canonicalUrl?: string
+  capPct?: string | null
+  changePct?: string | null
+  cik?: string
+  company?: string
+  companyName?: string
+  costUsd?: number | null
+  coupon?: string | null
+  cusip?: string
+  data?: Record<string, any>
+  date?: string
+  dateOfFirstSale?: string | null
+  daysToCover?: string | null
+  description?: string | null
+  docUrl?: string
+  docs?: string
+  end?: string
+  entityType?: string | null
+  eventDate?: string | null
+  eventLabels?: any[] | null
+  exchange?: string | null
+  exemptions?: string | null
+  fairValueUsd?: number | null
+  filedAt?: string
+  firstRegistration?: string | null
+  firstTxDate?: string
+  form?: string | null
+  formType?: string
+  frame?: string
+  fundType?: string | null
+  generatedId?: string | null
+  impliedPrice?: number | null
+  industryGroup?: string | null
+  insiderName?: string
+  insiderTitle?: string | null
+  insiders?: number
+  investorsCount?: number | null
+  isAmendment?: boolean
+  issuer?: string
+  issuerCik?: string | null
+  issuerName?: string
+  items?: any[] | null
+  latestFiledAt?: string | null
+  latestTxDate?: string
+  license?: string
+  listed?: boolean
+  manager?: string
+  market?: string
+  meta?: Record<string, any>
+  minimumInvestment?: number | null
+  mod?: string | null
+  naicsCode?: string | null
+  name?: string
+  netIncome?: number | null
+  noteType?: string | null
+  offeringAmount?: number | null
+  percentOfClass?: number | null
+  personName?: string
+  personType?: string | null
+  price?: number | null
+  priceNote?: string | null
+  pricePerShare?: string | null
+  pricingDate?: string | null
+  principalUsd?: string | null
+  quantity?: number
+  recipientName?: string
+  relationship?: string | null
+  reportingCik?: string | null
+  reportingPerson?: string
+  revenue?: number | null
+  revenueRange?: string | null
+  securityClass?: string | null
+  securityName?: string | null
+  securityTypes?: string | null
+  settlementDate?: string
+  shares?: string | null
+  sharesOwned?: number | null
+  shortExemptVolume?: number | null
+  shortQty?: number | null
+  shortRatio?: number | null
+  shortVolume?: number
+  slug?: string
+  source?: string
+  state?: string | null
+  status?: string
+  symbol?: string | null
+  ticker?: string
+  totalAmountSold?: number | null
+  totalOfferingAmount?: number | null
+  totalVolume?: number
+  trades?: number
+  txDate?: string
+  underlyings?: any[] | null
+  units?: number | null
+  unitsOutstanding?: number | null
+  unitsReliable?: boolean
+  unitsToSell?: number | null
+  updatedAt?: string
+  url?: string
+  valueUsd?: number | null
+}
+
+export interface CompanyLoadMatch {
+  slug: string
+}
+
+export interface CompanyListMatch {
+  accessionNo?: string | null
+  actionDate?: string
+  actionType?: string | null
+  aggregateMarketValue?: number | null
+  amendmentNo?: number | null
+  amountUsd?: number
+  approxSaleDate?: string | null
+  asOf?: string | null
+  attribution?: string
+  avgDailyVol?: number | null
+  awardId?: string
+  awardType?: string | null
+  awardingAgency?: string | null
+  awardingSubAgency?: string | null
+  barrierPct?: string | null
+  basis?: string | null
+  broker?: string | null
+  buybacks?: number
+  buyers?: any[]
+  canonicalUrl?: string
+  capPct?: string | null
+  changePct?: string | null
+  cik?: string
+  company?: string
+  companyName?: string
+  costUsd?: number | null
+  coupon?: string | null
+  cusip?: string
+  data?: Record<string, any>
+  date?: string
+  dateOfFirstSale?: string | null
+  daysToCover?: string | null
+  description?: string | null
+  docUrl?: string
+  docs?: string
+  end?: string
+  entityType?: string | null
+  eventDate?: string | null
+  eventLabels?: any[] | null
+  exchange?: string | null
+  exemptions?: string | null
+  fairValueUsd?: number | null
+  filedAt?: string
+  firstRegistration?: string | null
+  firstTxDate?: string
+  form?: string | null
+  formType?: string
+  frame?: string
+  fundType?: string | null
+  generatedId?: string | null
+  impliedPrice?: number | null
+  industryGroup?: string | null
+  insiderName?: string
+  insiderTitle?: string | null
+  insiders?: number
+  investorsCount?: number | null
+  isAmendment?: boolean
+  issuer?: string
+  issuerCik?: string | null
+  issuerName?: string
+  items?: any[] | null
+  latestFiledAt?: string | null
+  latestTxDate?: string
+  license?: string
+  listed?: boolean
+  manager?: string
+  market?: string
+  meta?: Record<string, any>
+  minimumInvestment?: number | null
+  mod?: string | null
+  naicsCode?: string | null
+  name?: string
+  netIncome?: number | null
+  noteType?: string | null
+  offeringAmount?: number | null
+  percentOfClass?: number | null
+  personName?: string
+  personType?: string | null
+  price?: number | null
+  priceNote?: string | null
+  pricePerShare?: string | null
+  pricingDate?: string | null
+  principalUsd?: string | null
+  quantity?: number
+  recipientName?: string
+  relationship?: string | null
+  reportingCik?: string | null
+  reportingPerson?: string
+  revenue?: number | null
+  revenueRange?: string | null
+  securityClass?: string | null
+  securityName?: string | null
+  securityTypes?: string | null
+  settlementDate?: string
+  shares?: string | null
+  sharesOwned?: number | null
+  shortExemptVolume?: number | null
+  shortQty?: number | null
+  shortRatio?: number | null
+  shortVolume?: number
+  slug?: string
+  source?: string
+  state?: string | null
+  status?: string
+  symbol?: string | null
+  ticker?: string
+  totalAmountSold?: number | null
+  totalOfferingAmount?: number | null
+  totalVolume?: number
+  trades?: number
+  txDate?: string
+  underlyings?: any[] | null
+  units?: number | null
+  unitsOutstanding?: number | null
+  unitsReliable?: boolean
+  unitsToSell?: number | null
+  updatedAt?: string
+  url?: string
+  valueUsd?: number | null
+}
+
+export interface Crypto {
+  asset?: string
+  attribution?: string
+  aumUsd?: string | null
+  baseAsset?: string
+  binanceSymbol?: string | null
+  bitmexSymbol?: string | null
+  bybitSymbol?: string | null
+  canonicalUrl?: string
+  count?: number
+  data?: Record<string, any>
+  date?: string
+  docs?: string
+  exchange?: string
+  flowUsd?: string | null
+  fundingAnnualized?: number | null
+  fundingIntervalHours?: number
+  fundingRate?: string | null
+  fundingRate8h?: number | null
+  holdings?: string | null
+  hour?: string
+  hyperliquidCoin?: string | null
+  id?: number
+  issuer?: string
+  krakenSymbol?: string | null
+  license?: string
+  longShortRatio?: string | null
+  longUsd?: number
+  markPrice?: string | null
+  maxSingleUsd?: number
+  meta?: Record<string, any>
+  nextFundingTime?: string | null
+  okxInstId?: string | null
+  openInterest?: string | null
+  openInterestValue?: string | null
+  price?: string
+  priceChangePct24h?: string | null
+  qty?: string
+  rawSymbol?: string
+  shortUsd?: number
+  side?: string
+  slug?: string
+  source?: string
+  symbol?: string
+  ticker?: string
+  totalUsd?: number
+  ts?: string
+  updatedAt?: string
+  usdValue?: string
+}
+
+export interface CryptoLoadMatch {
+  coin: string
+}
+
+export interface CryptoListMatch {
+  asset?: string
+  day?: number
+}
+
+export interface Macro {
+  actual?: string | null
+  assetMgrLong?: number | null
+  assetMgrShort?: number | null
+  assets?: number
+  attribution?: string
+  auctionDate?: string
+  bidToCover?: number | null
+  canonicalUrl?: string
+  country?: string
+  countryCode?: string
+  cusip?: string
+  data?: any[]
+  date?: string
+  dealerAccepted?: number | null
+  dealerLong?: number | null
+  dealerShare?: number | null
+  dealerShort?: number | null
+  directAccepted?: number | null
+  directShare?: number | null
+  docs?: string
+  eventName?: string
+  forecast?: string | null
+  group?: string
+  highRate?: number | null
+  highYield?: number | null
+  importance?: string
+  indirectAccepted?: number | null
+  indirectShare?: number | null
+  interestRate?: number | null
+  issueDate?: string | null
+  lastChanged?: string | null
+  levFundLong?: number | null
+  levFundShort?: number | null
+  license?: string
+  m1_m6?: string | null
+  maturityDate?: string | null
+  meta?: Record<string, any>
+  name?: string
+  net?: number
+  nonreptLong?: number | null
+  nonreptShort?: number | null
+  offeringAmount?: number | null
+  openInterest?: number | null
+  otherLong?: number | null
+  otherShort?: number | null
+  periodLabel?: string | null
+  previous?: string | null
+  rate?: string
+  reopening?: boolean | null
+  reportDate?: string
+  reportType?: string
+  reserves?: number | null
+  rrp?: number
+  scheduledAt?: string
+  securityTerm?: string
+  securityType?: string
+  slug?: string
+  sortRank?: number
+  source?: string
+  tga?: number
+  totalAccepted?: number | null
+  totalTendered?: number | null
+  unit?: string | null
+  updatedAt?: string
+  y1_y30?: string | null
+}
+
+export interface MacroLoadMatch {
+  country: string
+  from?: string
+  to?: string
+}
+
+export interface MacroListMatch {
+  from?: string
+  importance?: string
+  to?: string
+}
+
